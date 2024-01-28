@@ -1,0 +1,7 @@
+# https://git-scm.com/docs/gitignore
+
+# Environs
+/.venv/
+
+# Websites
+/site/
