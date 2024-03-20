@@ -29,4 +29,4 @@ def serve(ctx: Context) -> None:
 @task
 def deploy(ctx: Context) -> None:
     """Deploy the documentation."""
-    ctx.run("poetry run mkdiocs gh-deploy")
+    ctx.run("poetry run mkdocs gh-deploy")

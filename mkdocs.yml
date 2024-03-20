@@ -5,7 +5,32 @@ repo_url: https://github.com/MLOPS-University/mlops-coding-course
 site_name: MLOps Coding Course
 site_description: Learn how to create, develop, and maintain a state-of-the-art MLOps code base.
 site_autor: MLOps University
-copyright: CC BY
-# site_url: TODO
+site_url: https://mlops-university.github.io/mlops-coding-course/
+edit_uri: edit/main/docs/
 theme:
   name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - content.code.copy
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format

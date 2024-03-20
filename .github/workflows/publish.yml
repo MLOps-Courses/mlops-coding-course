@@ -1,0 +1,23 @@
+name: Publish
+on:
+  push:
+    branches:
+      - main
+permissions:
+  contents: write
+concurrency:
+  cancel-in-progress: true
+  group: publish-workflow
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pipx install invoke poetry
+        shell: bash
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+          cache: poetry
+      - run: poetry install
+      - run: poetry run invoke deploy --force
