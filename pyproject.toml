@@ -1,0 +1,30 @@
+# https://python-poetry.org/docs/pyproject/
+
+# PROJECT
+
+[tool.poetry]
+name = "mlops-coding-course"
+version = "0.0.1"
+package-mode = false
+description = "Learn how to create, develop, and maintain a state-of-the-art MLOps code base."
+repository = "https://github.com/MLOps-University/mlops-coding-course"
+documentation = "https://github.com/MLOps-University/mlops-coding-course"
+authors = ["Médéric HURIER <github@fmind.dev>"]
+readme = "README.md"
+license = "CC BY"
+
+# DEPENDENCIES
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.14"
+
+[tool.poetry.group.dev.dependencies]
+invoke = "^2.2.0"
+
+# SYSTEMS
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

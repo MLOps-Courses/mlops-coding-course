@@ -1,9 +1,11 @@
 # https://www.mkdocs.org/user-guide/configuration/#configuration
 
-repo_name: MLOPS-Teaching/mlops-coding-course
-repo_url: https://github.com/MLOPS-Teaching/mlops-coding-course
+repo_name: MLOPS-University/mlops-coding-course
+repo_url: https://github.com/MLOPS-University/mlops-coding-course
 site_name: MLOps Coding Course
-site_description: Learn how to create and maintain MLOps code base.
+site_description: Learn how to create, develop, and maintain a state-of-the-art MLOps code base.
+site_autor: MLOps University
+copyright: CC BY
 # site_url: TODO
 theme:
   name: material
