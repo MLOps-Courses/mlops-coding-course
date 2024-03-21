@@ -1,14 +1,22 @@
 # https://www.mkdocs.org/user-guide/configuration/#configuration
 
+# Project information
+site_author: MLOps University
+site_name: MLOps Coding Course
+site_url: https://mlops-university.github.io/mlops-coding-course/
+site_description: Learn how to create, develop, and maintain a state-of-the-art MLOps code base.
+
+# Repository
 repo_name: MLOPS-University/mlops-coding-course
 repo_url: https://github.com/MLOPS-University/mlops-coding-course
-site_name: MLOps Coding Course
-site_description: Learn how to create, develop, and maintain a state-of-the-art MLOps code base.
-site_autor: MLOps University
-site_url: https://mlops-university.github.io/mlops-coding-course/
-edit_uri: edit/main/docs/
+
+# Copyright
+copyright: Copyright &copy; MLOps University
+
+# Theme
 theme:
   name: material
+  # favicon: images/favicon.ico
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
@@ -28,6 +36,15 @@ theme:
         name: Switch to system preference
   features:
     - content.code.copy
+    - navigation.footer
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MLOPS-University/mlops-coding-course
+
+# Extensions
 markdown_extensions:
   - pymdownx.superfences:
       custom_fences:

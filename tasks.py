@@ -15,6 +15,13 @@ def install(ctx: Context) -> None:
 
 
 @task
+def reset(ctx: Context) -> None:
+    """Reset the installation."""
+    ctx.run("rm -rf .venv/")
+    ctx.run("rm -f poetry.lock")
+
+
+@task
 def build(ctx: Context) -> None:
     """Build the documentation."""
     ctx.run("poetry run mkdocs build")
@@ -29,4 +36,4 @@ def serve(ctx: Context) -> None:
 @task
 def deploy(ctx: Context) -> None:
     """Deploy the documentation."""
-    ctx.run("poetry run mkdocs gh-deploy")
+    ctx.run("poetry run mkdocs gh-deploy --force")

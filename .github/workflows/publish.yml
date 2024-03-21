@@ -20,4 +20,4 @@ jobs:
           python-version: 3.12
           cache: poetry
       - run: poetry install
-      - run: poetry run invoke deploy --force
+      - run: poetry run invoke deploy
