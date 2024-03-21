@@ -37,6 +37,8 @@ theme:
   features:
     - content.code.copy
     - navigation.footer
+    - navigation.indexes
+    - navigation.tabs
 
 # Extra
 extra:
