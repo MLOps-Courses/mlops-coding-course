@@ -24,12 +24,14 @@ theme:
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      accent: cyan
       primary: purple
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      accent: cyan
       primary: purple
       toggle:
         icon: material/brightness-4
