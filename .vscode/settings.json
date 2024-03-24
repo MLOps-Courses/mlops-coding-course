@@ -3,6 +3,7 @@
         "codebases",
         "Codespaces",
         "Colab",
-        "prohib"
+        "prohib",
+        "pyenv"
     ]
 }
