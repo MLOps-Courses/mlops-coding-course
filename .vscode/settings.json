@@ -3,7 +3,11 @@
         "codebases",
         "Codespaces",
         "Colab",
+        "dataframes",
+        "hyperparameters",
+        "overfitting",
         "prohib",
-        "pyenv"
+        "pyenv",
+        "scikit"
     ]
 }

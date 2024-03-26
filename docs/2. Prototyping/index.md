@@ -1,1 +1,11 @@
 # 2. Prototyping
+
+In this chapter, we'll explore the cornerstone of any machine learning (ML) project: Prototyping. Prototyping is a preliminary phase where data scientists and engineers experiment with various approaches to find the most effective solution. This stage is crucial for understanding the problem at hand, experimenting with different models, and identifying the best strategies before finalizing the project's architecture and moving into production. We'll cover essential tools and practices that enhance the efficiency and effectiveness of this process, focusing on practical aspects that can significantly impact the success of ML projects.
+
+- [2.0. Notebooks](2.0. Notebooks.md): Introduces Jupyter notebooks as an essential tool for prototyping in machine learning, covering their advantages for iterative development and interactive data exploration.
+- [2.1. Imports](2.1. Imports.md): Discusses best practices for organizing import statements in notebooks to ensure clarity and maintainability, including recommendations for grouping and ordering libraries.
+- [2.2. Configs](2.2. Configs.md): Highlights the importance of centralizing configuration settings, such as paths and parameters, for easier experimentation and reproducibility.
+- [2.3. Datasets](2.3. Datasets.md): Offers guidelines for loading, exploring, and preprocessing datasets within notebooks, emphasizing methods for efficient data handling and analysis.
+- [2.4. Analysis](2.4. Analysis.md): Explores techniques for conducting thorough data analysis in notebooks, including visualizations, statistical tests, and exploratory data analysis (EDA) practices.
+- [2.5. Modeling](2.5. Modeling.md): Details strategies for building, refining, and comparing machine learning models directly within notebooks, covering everything from initial prototypes to model selection.
+- [2.6. Evaluation](2.6. Evaluation.md): Provides insights on effectively evaluating model performance using various metrics and visualizations, underscoring the role of evaluation in the iterative model development process.
