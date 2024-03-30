@@ -4,7 +4,7 @@
 site_author: MLOps University
 site_name: MLOps Coding Course
 site_url: https://mlops-university.github.io/mlops-coding-course/
-site_description: Learn how to create, develop, and maintain a state-of-the-art MLOps code base.
+site_description: Learn how to create, develop, and maintain an MLOps code base.
 
 # Repository
 repo_name: MLOPS-University/mlops-coding-course
@@ -18,24 +18,8 @@ theme:
   name: material
   # favicon: images/favicon.ico
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: green
-      accent: light green
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: green
-      accent: light green
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+    primary: indigo
+    accent: blue
   features:
     - content.code.copy
     - navigation.footer

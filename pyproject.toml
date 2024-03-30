@@ -5,8 +5,8 @@
 [tool.poetry]
 name = "mlops-coding-course"
 version = "0.0.1"
+description = "Learn how to create, develop, and maintain an MLOps code base."
 package-mode = false
-description = "Learn how to create, develop, and maintain a state-of-the-art MLOps code base."
 repository = "https://github.com/MLOps-University/mlops-coding-course"
 documentation = "https://mlops-university.github.io/mlops-coding-course/"
 authors = ["Médéric HURIER <github@fmind.dev>"]
