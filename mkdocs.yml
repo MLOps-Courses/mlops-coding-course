@@ -18,7 +18,7 @@ theme:
   name: material
   # favicon: images/favicon.ico
   palette:
-    primary: indigo
+    primary: black
   features:
     - content.code.copy
     - navigation.footer
