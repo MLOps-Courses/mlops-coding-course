@@ -18,8 +18,9 @@ theme:
   name: material
   # favicon: images/favicon.ico
   palette:
-    primary: black
-    scheme: default
+    primary: deep-purple
+    accent: deep-purple
+    scheme: slate
   features:
     - content.code.copy
     - navigation.footer
