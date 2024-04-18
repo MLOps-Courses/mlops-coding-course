@@ -1,4 +1,4 @@
-# 1\. Initializing
+# 1. Initializing
 
 The initialization phase is crucial in setting the stage for efficient and streamlined development, particularly for projects centered around Python and MLOps. This chapter aims to guide you through establishing a robust development setup, ensuring that every necessary tool and environment is correctly configured from the get-go. By meticulously following these foundational steps, you'll create a solid base for your project, enabling smooth progress and reducing the likelihood of delays caused by environment-related issues.
 
@@ -9,5 +9,3 @@ The initialization phase is crucial in setting the stage for efficient and strea
 - **[1.4. git](./1.4. git.md)**: Focuses on `git`, the cornerstone version control system integral to GitHub. You'll learn how to initiate and manage repositories effectively, a critical skill for collaborative development.
 - **[1.5. GitHub](./1.5. GitHub.md)**: Discusses how to leverage GitHub for project hosting, version control, and collaboration. It's a pivotal component in modern development workflows, facilitating teamwork and project management.
 - **[1.6. VS Code](./1.6. VS Code.md)**: Highlights the setup of Visual Studio Code (VS Code), showing how to adapt this versatile editor into an integrated development environment (IDE) customized for Python and MLOps projects.
-
-Completing this chapter equips you with a comprehensive development environment, ready for Python-centric projects with an emphasis on machine learning and MLOps. This groundwork is vital, ensuring you can concentrate on development tasks without distractions or delays caused by technical setbacks.

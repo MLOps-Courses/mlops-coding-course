@@ -21,6 +21,7 @@ theme:
     primary: deep-purple
     accent: deep-purple
     scheme: slate
+
   features:
     - content.code.copy
     - navigation.footer
