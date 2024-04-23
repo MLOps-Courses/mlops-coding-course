@@ -18,9 +18,9 @@ theme:
   name: material
   # favicon: images/favicon.ico
   palette:
-    primary: deep-purple
-    accent: deep-purple
-    scheme: slate
+    primary: indigo
+    accent: blue
+    scheme: default
 
   features:
     - content.code.copy
