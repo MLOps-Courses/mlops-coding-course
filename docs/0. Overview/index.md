@@ -9,5 +9,5 @@ In this overview, we'll guide you through the various components that make up th
 - **[0.2. Datasets](./0.2. Datasets.md)**: Offers a comprehensive look at various types of datasets, their importance throughout the AI/ML project lifecycle, and guidance on selecting the most suitable datasets.
 - **[0.3. Platforms](./0.3. Platforms.md)**: Discusses how to choose an MLOps platform that best fits organizational needs, highlighting the course's agnostic approach to specific platforms.
 - **[0.4. Mentoring](./0.4. Mentoring.md)**: Details the mentoring services provided by the course creators, emphasizing the benefits of personalized advice and support.
-- **[0.5. Assistants](./0.5. Assistants.md)**: Introduces the specialized OpenAI GPT-based assistant tailored for this course, including tips on leveraging it effectively.
+- **[0.5. Assistants](./0.5. Assistants.md)**: Introduces the specialized online assistant tailored for this course, including tips on leveraging it effectively.
 - **[0.6. Resources](./0.6. Resources.md)**: Clarifies the extra resources available to enhance the course content and explains how participants can contribute to the course's open-source materials.

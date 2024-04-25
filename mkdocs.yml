@@ -18,7 +18,7 @@ theme:
   name: material
   # favicon: images/favicon.ico
   palette:
-    primary: indigo
+    primary: blue-grey
     accent: blue
     scheme: default
 
@@ -36,6 +36,7 @@ extra:
 
 # Extensions
 markdown_extensions:
+  - md_in_html
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
