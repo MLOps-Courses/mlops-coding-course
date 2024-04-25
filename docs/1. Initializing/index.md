@@ -1,6 +1,6 @@
 # 1. Initializing
 
-The initialization phase is crucial in setting the stage for efficient and streamlined development, particularly for projects centered around Python and MLOps. This chapter aims to guide you through establishing a robust development setup, ensuring that every necessary tool and environment is correctly configured from the get-go. By meticulously following these foundational steps, you'll create a solid base for your project, enabling smooth progress and reducing the likelihood of delays caused by environment-related issues.
+The initialization phase is crucial in setting the stage for efficient and streamlined development, particularly for projects centered around Python and MLOps. This chapter aims to guide you through establishing a robust development setup, ensuring that every necessary tool and environment is correctly configured from the get-go. By following these foundational steps, you'll create a solid base for your project, enabling smooth progress and reducing the likelihood of delays caused by environment-related issues.
 
 - **[1.0. System](./1.0. System.md)**: This section ensures your system is adequately prepared, outlining the essential prerequisites for installing and effectively running the necessary development tools.
 - **[1.1. Python](./1.1. Python.md)**: Here, we introduce how to set up Python—the core programming language for our projects. We'll focus on version management and creating isolated environments for each project to avoid conflicts and dependencies issues.
