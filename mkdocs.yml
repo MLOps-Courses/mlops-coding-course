@@ -18,29 +18,9 @@ theme:
   name: material
   # favicon: images/favicon.ico
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: black
-      accent: red
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: red
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference
+    scheme: slate
+    primary: green
+    accent: green
 
   features:
     - content.code.copy
