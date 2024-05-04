@@ -36,6 +36,7 @@ extra:
 
 # Extensions
 markdown_extensions:
+  - attr_list
   - md_in_html
   - pymdownx.superfences:
       custom_fences:
