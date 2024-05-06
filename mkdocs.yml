@@ -18,9 +18,8 @@ theme:
   name: material
   # favicon: images/favicon.ico
   palette:
-    scheme: slate
-    primary: green
-    accent: green
+    scheme: default
+    primary: indigo
 
   features:
     - content.code.copy
