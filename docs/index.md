@@ -1,6 +1,6 @@
 # Welcome
 
-Welcome to our comprehensive MLOps course, designed to integrate robust software development practices with cutting-edge data science techniques. This course is tailored for both beginners who are just starting their journey and experienced professionals looking to enhance their skills in managing and executing AI and machine learning projects using Python. Here, you will learn through a hands-on approach that emphasizes real-world applications and efficient project execution.
+Welcome to our comprehensive MLOps Coding Course, designed to integrate robust software development practices with cutting-edge data science techniques. This course is tailored for both beginners who are just starting their journey and experienced professionals looking to enhance their skills in managing and executing AI and machine learning projects using Python. Here, you will learn through a hands-on approach that emphasizes real-world applications and efficient project execution.
 
 ## [Chapter 0: Overview](./0. Overview/)
 
@@ -29,5 +29,7 @@ In this chapter, we delve into refining MLOps projects to enhance their efficien
 ## [Chapter 6: Sharing](./6. Sharing/)
 
 The final chapter focuses on sharing and distributing MLOps projects. We explore tools and practices that enhance collaboration, promote reuse, and facilitate the scaling of machine learning solutions. You will learn how to effectively organize, document, and disseminate your projects to make them more accessible and beneficial to others.
+
+## Let's journey together!
 
 We are excited to have you join us on this journey to mastering MLOps. By the end of this course, you will be well-equipped to manage and execute ML projects with a high degree of professionalism and skill. Let’s get started on transforming your data science capabilities with effective MLOps practices!
