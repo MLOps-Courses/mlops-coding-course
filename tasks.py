@@ -52,7 +52,7 @@ def assist(ctx: Context) -> None:
         if source_file.parent == source_folder:
             destination_name = destination_path.name # do not include parent name
         else:
-            destination_name = f"{destination_path.parent} - {destination_path.name}"
+            destination_name = f"{destination_path.parent}__{destination_path.name}"
         destination_file = destination_folder / destination_name
         print(f"{source_file} -> {destination_file}")
         shutil.copy(source_file, destination_file)
