@@ -14,7 +14,7 @@ The first chapter focuses on the initialization phase, which is crucial for sett
 
 This chapter dives into the prototyping phase, a critical stage where various approaches are tested to identify the most effective solutions, usually with notebooks. We cover essential tools and practices that improve the efficiency of this process, helping you understand the problem and experiment with different models before finalizing the project architecture.
 
-## [Chapter 3: Refactoring](./3. Refactoring/)
+## [Chapter 3: Productionizing](./3. Productionizing/)
 
 Learn to refine your Python codebase for better maintainability, scalability, and efficiency in Chapter 3. This includes transitioning from notebooks to structured Python packages, understanding different programming paradigms, and optimizing your development environment. These practices are crucial for enhancing code quality and collaboration.
 

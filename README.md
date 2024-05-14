@@ -17,7 +17,7 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 
 1. **Initializing**: Set up your development environment, manage Python versions, and handle external dependencies.
 2. **Prototyping**: Use Jupyter notebooks for ML prototyping, explore dataset manipulation, and perform initial model assessments.
-3. **Refactoring**: Transition from notebooks to clean Python packages, learn about modular coding, and understand different programming paradigms.
+3. **Productionizing**: Transition from notebooks to clean Python packages, learn about modular coding, and understand different programming paradigms.
 4. **Validating**: Focus on code quality with typing, linting, testing, and debugging to ensure your ML projects are robust and maintainable.
 5. **Refining**: Dive into advanced MLOps techniques including CI/CD workflows, software containers, and model registries to streamline your operations.
 6. **Sharing**: Learn how to effectively organize and document your MLOps projects to ensure they are accessible and collaborative.
