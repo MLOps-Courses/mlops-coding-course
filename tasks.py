@@ -39,22 +39,3 @@ def serve(ctx: Context) -> None:
 def deploy(ctx: Context) -> None:
     """Deploy the documentation."""
     ctx.run("poetry run mkdocs gh-deploy --force")
-
-
-@task(pre=[build])
-def assist(ctx: Context) -> None:
-    """Gather content for assistant."""
-    source_folder = Path("site")
-    destination_folder = Path("assistant")
-    ctx.run(f"rm -f {destination_folder}/*.html")
-    for source_file in source_folder.rglob("*.html"):
-        destination_path = source_file.relative_to(source_folder)
-        if source_file.parent == source_folder:
-            destination_name = destination_path.name # do not include parent name
-        else:
-            destination_name = f"{destination_path.parent}__{destination_path.name}"
-        destination_file = destination_folder / destination_name
-        print(f"{source_file} -> {destination_file}")
-        shutil.copy(source_file, destination_file)
-
-
