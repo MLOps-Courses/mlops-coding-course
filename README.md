@@ -1,6 +1,6 @@
 # MLOps Coding Course
 
-**Welcome to the MLOps Coding Course!**
+**Welcome to the [MLOps Coding Course](https://mlops-coding-course.fmind.dev/)!**
 
 This course is designed to dive deep into the intersection of software development and data science, focusing on the practical applications of machine learning (ML) and artificial intelligence (AI) projects using Python.
 
@@ -12,6 +12,11 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 - **Project-Driven Learning**: Each chapter includes practical project instructions to help you apply what you've learned.
 - **MLOps Techniques**: Gain insights into effective MLOps coding strategies that streamline the development and deployment of AI/ML models.
 - **Open Source Tools**: Familiarize yourself with industry-standard tools like [poetry](https://python-poetry.org/), [pytest](https://docs.pytest.org/en/latest/), [pyenv](https://github.com/pyenv/pyenv), [ruff](https://docs.astral.sh/ruff/), [mlflow](https://mlflow.org/), [bandit](https://bandit.readthedocs.io/en/latest/), [pre-commit](https://pre-commit.com/), [GitHub](https://github.com/), and [VS Code](https://code.visualstudio.com/).
+- **Mentoring sessions**: Boost your learning experience with personalized feedback and expert insights from the course authors.
+  - Contact the [course creators](mailto:mlops-coding-course@fmind.dev) to request a personalized quote.
+  - Book [a one-on-one mentoring session](https://calendar.app.google/9KfEBkpCHQKwarLF8) to receive tailored guidance and support throughout the course.
+- **MLOps Coding Assistant**: Get help from the [MLOps Coding Assistant](https://mlops-coding-assistant.fmind.dev/), a premium tool that provides code snippets, explanations, and examples to help you learn and apply MLOps techniques.
+  - Contact the [course creators](mailto:mlops-coding-course@fmind.dev) to access the assistant for $10 per month.
 
 ## Course Content
 
@@ -21,7 +26,6 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 4. **Validating**: Focus on code quality with typing, linting, testing, and debugging to ensure your ML projects are robust and maintainable.
 5. **Refining**: Dive into advanced MLOps techniques including CI/CD workflows, software containers, and model registries to streamline your operations.
 6. **Sharing**: Learn how to effectively organize and document your MLOps projects to ensure they are accessible and collaborative.
-
 
 ## Installation
 
