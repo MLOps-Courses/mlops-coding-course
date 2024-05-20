@@ -35,8 +35,14 @@ theme:
 # Extra
 extra:
   social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:mlops-coding-course@fmind.dev
     - icon: fontawesome/brands/github
       link: https://github.com/MLOPS-Courses/mlops-coding-course
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/fmind_dev
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/fmind-dev/
 
 # Extensions
 markdown_extensions:

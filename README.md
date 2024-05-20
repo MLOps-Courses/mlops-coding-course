@@ -53,3 +53,7 @@ This course is [open source under the CC-BY 4.0 license](https://github.com/MLOp
 Feel free to [submit pull requests](https://github.com/MLOps-Courses/mlops-coding-course/pulls) or [open issues](https://github.com/MLOps-Courses/mlops-coding-course/issues) to discuss potential changes or additions to the course content.
 
 **Join us in advancing the field of MLOps by sharing your expertise and learning from others!**
+
+## Donations
+
+If you find this course helpful and would like to support its creators, you can make a donation via [Stripe](https://donate.stripe.com/4gw8xT9oVbCc98s7ss).
