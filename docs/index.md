@@ -1,5 +1,9 @@
 # MLOps Coding Course
 
+<center>
+    <img src="./assets/banner.png" alt="MLOps Coding Course Banner" style="height: 300px" />
+</center>
+
 Welcome to our comprehensive [MLOps Coding Course](https://mlops-coding-course.fmind.dev/), designed to integrate robust software development practices with cutting-edge data science techniques. This course is tailored for both beginners who are just starting their journey and experienced professionals looking to enhance their skills in managing and executing AI and machine learning projects using Python. Here, you will learn through a hands-on approach that emphasizes real-world applications and efficient project execution.
 
 ## [Chapter 0: Overview](./0. Overview/)
