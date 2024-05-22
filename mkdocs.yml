@@ -43,6 +43,9 @@ extra:
       link: https://twitter.com/fmind_dev
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/fmind-dev/
+  analytics:
+    provider: google
+    property: G-MWT9Z8Y8PW
 
 # Extensions
 markdown_extensions:
