@@ -1,3 +1,7 @@
+---
+description: This chapter dives into the prototyping phase of machine learning development using Python notebooks. Explore best practices for loading, exploring, and analyzing datasets, building initial models, and evaluating their performance.
+---
+
 # 2. Prototyping
 
 In this chapter, we'll explore the cornerstone of any machine learning (ML) project: [Prototyping](https://c3.ai/glossary/data-science/model-prototyping/) through Python notebooks. Prototyping is a preliminary phase where data scientists and engineers experiment with various approaches to find the most effective solution. This stage is crucial for understanding the problem at hand, experimenting with different models, and identifying the best strategies before finalizing the project's architecture and moving into production. We'll cover essential tools and practices that enhance the efficiency and effectiveness of this process, focusing on practical aspects that can significantly impact the success of ML projects.

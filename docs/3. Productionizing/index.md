@@ -1,3 +1,7 @@
+---
+description: This chapter covers the transition from prototype to production, focusing on structuring your code as a Python package. Learn about programming paradigms, entry points, configurations, and documentation practices to build maintainable and scalable machine learning systems.
+---
+
 # 3. Productionizing
 
 In this chapter, we'll explore key strategies for improving your Python codebase, making it more maintainable, scalable, and efficient. We'll also cover the pivotal transition from working in notebooks to structuring your code as a Python package, a crucial step for enhancing code quality and collaboration. From organizing your project into packages and modules, understanding programming paradigms, and setting up entry points, to managing configurations, documenting your work, and optimizing your development environment with VS Code, you'll learn practical tips to refine your Python projects. Let's dive into refining your Python skills and elevating your projects.

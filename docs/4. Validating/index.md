@@ -1,3 +1,7 @@
+---
+description: This chapter emphasizes the importance of code validation for creating robust MLOps pipelines. Learn how to implement typing, linting, and testing to ensure the quality and reliability of your code.
+---
+
 # 4.0 Validating
 
 In the fast-paced world of Machine Learning Operations (MLOps), ensuring the quality and integrity of code is crucial for the development of scalable, efficient, and reliable ML systems. This course chapter focuses on essential code validation techniques that bolster the robustness of ML pipelines, from typing to debugging, to elevate code quality and operational efficiency.

@@ -1,3 +1,7 @@
+---
+description: This chapter provides an introduction to the MLOps Coding Course, outlining its goals, structure, and target audience. Learn why MLOps is essential for building and managing production-ready machine learning systems.
+---
+
 # 0. Overview
 
 Welcome to the introductory chapter of our course, where we delve into the integration of software development practices with the dynamic field of data science. This course is designed to empower you with the knowledge and skills necessary to manage and execute artificial intelligence (AI) and machine learning (ML) projects effectively using advanced Python techniques. Whether you're a beginner looking to get started or an experienced professional aiming to enhance your capabilities, this course has something to offer.

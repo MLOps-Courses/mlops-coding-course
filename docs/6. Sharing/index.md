@@ -1,3 +1,7 @@
+---
+description: This chapter focuses on sharing your MLOps projects with others. Learn how to create effective repositories, choose licenses, write clear READMEs, manage releases, and build a thriving community around your work.
+---
+
 # 6. Sharing
 
 In this chapter, we will explore the essential practices and tools that facilitate the sharing and distribution of machine learning operations (MLOps) projects. Sharing not only enhances collaboration among data scientists and developers but also promotes the reuse and adaptation of existing models and workflows, crucial for the efficient scaling of machine learning solutions. By the end of this chapter, you will understand how to effectively organize, document, and disseminate your MLOps projects to make them accessible and useful to others.

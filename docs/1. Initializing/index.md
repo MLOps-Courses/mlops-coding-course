@@ -1,3 +1,7 @@
+---
+description: This chapter guides you through setting up a robust development environment for MLOps projects using Python. Learn how to manage Python versions, install dependencies with Poetry, and use Git and GitHub for version control and collaboration.
+---
+
 # 1. Initializing
 
 The initialization phase is crucial in setting the stage for efficient and streamlined development, particularly for projects centered around Python and MLOps. This chapter aims to guide you through establishing a robust development setup, ensuring that every necessary tool and environment is correctly configured from the get-go. By following these foundational steps, you'll create a solid base for your project, enabling smooth progress and reducing the likelihood of delays caused by environment-related issues.
