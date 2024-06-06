@@ -6,6 +6,8 @@ description: This chapter provides an introduction to the MLOps Coding Course, o
 
 Welcome to the introductory chapter of our course, where we delve into the integration of software development practices with the dynamic field of data science. This course is designed to empower you with the knowledge and skills necessary to manage and execute artificial intelligence (AI) and machine learning (ML) projects effectively using advanced Python techniques. Whether you're a beginner looking to get started or an experienced professional aiming to enhance your capabilities, this course has something to offer.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yF6BCoW32pY?si=kQ2ItsYHjmA_ga42" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="display: block; margin: 0 auto;"></iframe>
+
 In this overview, we'll guide you through the various components that make up this comprehensive learning experience:
 
 - **[0.0. Course](./0.0. Course.md)**: Unveils the course's mission to integrate software development disciplines with data science. Our objective is to equip learners with the confidence to embark on AI/ML projects using sophisticated Python methodologies.
