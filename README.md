@@ -6,8 +6,6 @@ This course is designed to dive deep into the intersection of software developme
 
 Whether you are a beginner eager to explore or an experienced professional seeking to enhance your skill set, this course offers valuable insights and hands-on experience.
 
-**Please support the course through this [Donation Link](https://donate.stripe.com/4gw8xT9oVbCc98s7ss)**.
-
 ## Key Features
 
 - **Hands-on Python Coding**: Learn to code with Python in a way that's directly applicable to real-world AI projects.
