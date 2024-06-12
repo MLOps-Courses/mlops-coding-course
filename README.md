@@ -6,7 +6,7 @@ This course is designed to dive deep into the intersection of software developme
 
 Whether you are a beginner eager to explore or an experienced professional seeking to enhance your skill set, this course offers valuable insights and hands-on experience.
 
-[Donation Link](https://donate.stripe.com/4gw8xT9oVbCc98s7ss)
+**Please support the course through this [Donation Link](https://donate.stripe.com/4gw8xT9oVbCc98s7ss)**.
 
 ## Key Features
 
