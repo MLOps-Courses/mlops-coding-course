@@ -8,8 +8,9 @@
 
 Welcome to our comprehensive [MLOps Coding Course](https://mlops-coding-course.fmind.dev/), designed to integrate robust software development practices with cutting-edge data science techniques. This course is tailored for both beginners who are just starting their journey and experienced professionals looking to enhance their skills in managing and executing AI and machine learning projects using Python. Here, you will learn through a hands-on approach that emphasizes real-world applications and efficient project execution.
 
-- **Donation Link**: https://donate.stripe.com/4gw8xT9oVbCc98s7ss
-- **GitHub Repository**: https://github.com/MLOps-Courses/mlops-coding-course
+- **Donation Link**: [https://donate.stripe.com/4gw8xT9oVbCc98s7ss](https://donate.stripe.com/4gw8xT9oVbCc98s7ss)
+- **GitHub Repository**: [https://github.com/MLOps-Courses/mlops-coding-course](https://github.com/MLOps-Courses/mlops-coding-course)
+- **MLOps Coding Asssistant**: [https://mlops-coding-assistant.fmind.dev/](https://mlops-coding-assistant.fmind.dev/)
 
 ## [Chapter 0: Overview](./0. Overview/)
 
