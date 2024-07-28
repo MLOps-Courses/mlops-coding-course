@@ -8,7 +8,7 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 
 **Related Resources:**
 - **[MLOps Python Package (Example)](https://github.com/fmind/mlops-python-package)**: Kickstart your MLOps initiative with a flexible, robust, and productive Python package.
-- **[Cookiecutter MLOps Package (Template)](https://github.com/fmind/cookiecutter-mlops-package)**: Build and deploy Python packages and Docker images for MLOps tasks.
+- **[Cookiecutter MLOps Package (Template)](https://github.com/fmind/cookiecutter-mlops-package)**: Start building and deploying Python packages and Docker images for MLOps tasks.
 
 ## Key Features
 
