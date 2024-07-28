@@ -6,6 +6,10 @@ This course is designed to dive deep into the intersection of software developme
 
 Whether you are a beginner eager to explore or an experienced professional seeking to enhance your skill set, this course offers valuable insights and hands-on experience.
 
+**Related Resources:**
+- **[MLOps Python Package (Example)](https://github.com/fmind/mlops-python-package)**: Kickstart your MLOps initiative with a flexible, robust, and productive Python package.
+- **[Cookiecutter MLOps Package (Template)](https://github.com/fmind/cookiecutter-mlops-package)**: Build and deploy Python packages and Docker images for MLOps tasks.
+
 ## Key Features
 
 - **Hands-on Python Coding**: Learn to code with Python in a way that's directly applicable to real-world AI projects.
@@ -26,6 +30,7 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 4. **Validating**: Focus on code quality with typing, linting, testing, and debugging to ensure your ML projects are robust and maintainable.
 5. **Refining**: Dive into advanced MLOps techniques including CI/CD workflows, software containers, and model registries to streamline your operations.
 6. **Sharing**: Learn how to effectively organize and document your MLOps projects to ensure they are accessible and collaborative.
+7. **Observability**: Gain comprehensive insights into the behavior and performance of your deployed models and infrastructure.
 
 ## Installation
 
