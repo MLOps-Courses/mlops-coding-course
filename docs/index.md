@@ -38,7 +38,11 @@ In this chapter, we delve into refining MLOps projects to enhance their efficien
 
 ## [Chapter 6: Sharing](./6. Sharing/)
 
-The final chapter focuses on sharing and distributing MLOps projects. We explore tools and practices that enhance collaboration, promote reuse, and facilitate the scaling of machine learning solutions. You will learn how to effectively organize, document, and disseminate your projects to make them more accessible and beneficial to others.
+The chapter focuses on sharing and distributing MLOps projects. We explore tools and practices that enhance collaboration, promote reuse, and facilitate the scaling of machine learning solutions. You will learn how to effectively organize, document, and disseminate your projects to make them more accessible and beneficial to others.
+
+## [Chapter 7: Observability](./7. Observability/)
+
+This chapter dives into the essential aspects of observability in MLOps, equipping you with the knowledge and strategies to gain comprehensive insights into the performance, behavior, and health of your deployed models and infrastructure. You'll learn how to ensure reproducibility, implement monitoring and alerting systems, track data and model lineage, manage costs and KPIs, understand model explainability, and monitor infrastructure performance.
 
 ## Let's journey together!
 

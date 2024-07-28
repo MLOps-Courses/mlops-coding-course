@@ -8,7 +8,7 @@ Observability in Machine Learning Operations (MLOps) is crucial for gaining insi
 
 - **[7.0. Reproducibility](./0. Reproducibility.md)**: Explore how to make machine learning experiments and pipelines more reproducible using MLflow Projects, enabling others to verify findings, share knowledge, and build upon existing work.
 - **[7.1. Monitoring](./1. Monitoring.md)**: Learn the fundamental principles and tools for monitoring AI/ML models, focusing on tracking key metrics, setting up alerts, and understanding changes in model behavior using MLflow Evaluate API and Evidently.
-- **[7.2. Alerting](./2. Alerting.md)**: Understand how to design effective alert systems to promptly notify stakeholders of potential issues with models or infrastructure using tools like Slack, Discord, Datadog, and Statuspal.
+- **[7.2. Alerting](./2. Alerting.md)**: Understand how to design effective alert systems to promptly notify stakeholders of potential issues with models or infrastructure using tools like Slack, Discord, Datadog, and PagerDuty.
 - **[7.3. Lineage](./3. Lineage.md)**: Delve into data and model lineage, discovering how to track the origin and transformation of data and models throughout the ML lifecycle using MLflow Dataset.
 - **[7.4. Costs and KPIs](./4. Costs-KPIs.md)**: Explore techniques for managing costs associated with running AI/ML workloads and for defining and tracking key performance indicators (KPIs) aligned with business goals, using MLflow Tracking for analysis.
 - **[7.5. Explainability](./5. Explainability.md)**: Explore the concept of explainable AI, focusing on techniques like SHAP to understand model predictions and build trust in AI systems.
