@@ -6,12 +6,12 @@
 name = "mlops-coding-course"
 version = "0.1.0"
 description = "Learn how to create, develop, and maintain an MLOps code base."
-package-mode = false
 repository = "https://github.com/MLOps-Courses/mlops-coding-course"
 documentation = "https://mlops-coding-course.fmind.dev/"
 authors = ["Médéric HURIER <github@fmind.dev>"]
 readme = "README.md"
 license = "CC BY"
+package-mode = false
 
 # DEPENDENCIES
 
