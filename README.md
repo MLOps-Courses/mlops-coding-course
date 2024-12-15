@@ -38,7 +38,7 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 To start contributing , you will need to set up your development environment:
 
 1. Clone the repository.
-2. In the cloned repostory directory, install dependencies using [uv](https://docs.astral.sh/uv/):
+2. In the cloned repository directory, install dependencies using [uv](https://docs.astral.sh/uv/):
 
 ```bash
 invoke install

@@ -10,7 +10,7 @@ Welcome to our comprehensive [MLOps Coding Course](https://mlops-coding-course.f
 
 - **Donation Link**: [https://donate.stripe.com/4gw8xT9oVbCc98s7ss](https://donate.stripe.com/4gw8xT9oVbCc98s7ss){target="_blank"}
 - **GitHub Repository**: [https://github.com/MLOps-Courses/mlops-coding-course](https://github.com/MLOps-Courses/mlops-coding-course){target="_blank"}
-- **MLOps Coding Asssistant**: [https://mlops-coding-assistant.fmind.dev/](https://mlops-coding-assistant.fmind.dev/){target="_blank"}
+- **MLOps Coding Assistant**: [https://mlops-coding-assistant.fmind.dev/](https://mlops-coding-assistant.fmind.dev/){target="_blank"}
 
 ## [Chapter 0: Overview](./0. Overview/)
 
