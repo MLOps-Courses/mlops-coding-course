@@ -14,8 +14,8 @@ repo_url: https://github.com/MLOPS-Courses/mlops-coding-course
 copyright: Copyright &copy; MLOps Courses
 
 # Configs
-use_directory_urls: false
 strict: true
+use_directory_urls: false
 
 # Theme
 theme:

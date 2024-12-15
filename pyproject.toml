@@ -1,30 +1,29 @@
-# https://python-poetry.org/docs/pyproject/
+# https://docs.astral.sh/uv/reference/settings/
+# https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
 
 # PROJECT
 
-[tool.poetry]
+[project]
 name = "mlops-coding-course"
-version = "3.1.0"
+version = "4.0.0"
 description = "Learn how to create, develop, and maintain an MLOps code base."
-repository = "https://github.com/MLOps-Courses/mlops-coding-course"
-documentation = "https://mlops-coding-course.fmind.dev/"
-authors = ["Médéric HURIER <github@fmind.dev>"]
+authors = [{ name = "Médéric HURIER", email = "github@fmind.dev" }]
 readme = "README.md"
-license = "CC BY"
-package-mode = false
+requires-python = ">=3.12"
+license = { file = "LICENSE.txt" }
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.5.48",
+]
 
 # DEPENDENCIES
 
-[tool.poetry.dependencies]
-python = "^3.12"
-mkdocs = "^1.5.3"
-mkdocs-material = "^9.5.14"
+[dependency-groups]
+dev = [
+    "invoke>=2.2.0",
+]
 
-[tool.poetry.group.dev.dependencies]
-invoke = "^2.2.0"
+# TOOLS
 
-# SYSTEMS
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+package = false

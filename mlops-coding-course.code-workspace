@@ -6,5 +6,5 @@
 	],
 	"settings": {
 		"python.defaultInterpreterPath": ".venv/bin/python"
-	},
+	}
 }

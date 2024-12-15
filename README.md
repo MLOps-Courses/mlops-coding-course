@@ -8,6 +8,7 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 
 **Related Resources:**
 - **[MLOps Python Package (Example)](https://github.com/fmind/mlops-python-package)**: Kickstart your MLOps initiative with a flexible, robust, and productive Python package.
+- **[LLMOps Coding Package (Example)](https://github.com/callmesora/llmops-python-package/)**: Example with best practices and tools to support your LLMOps projects.
 - **[Cookiecutter MLOps Package (Template)](https://github.com/fmind/cookiecutter-mlops-package)**: Start building and deploying Python packages and Docker images for MLOps tasks.
 
 ## Key Features
@@ -15,7 +16,7 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 - **Hands-on Python Coding**: Learn to code with Python in a way that's directly applicable to real-world AI projects.
 - **Project-Driven Learning**: Each chapter includes practical project instructions to help you apply what you've learned.
 - **MLOps Techniques**: Gain insights into effective MLOps coding strategies that streamline the development and deployment of AI/ML models.
-- **Open Source Tools**: Familiarize yourself with industry-standard tools like [poetry](https://python-poetry.org/), [pytest](https://docs.pytest.org/en/latest/), [pyenv](https://github.com/pyenv/pyenv), [ruff](https://docs.astral.sh/ruff/), [mlflow](https://mlflow.org/), [bandit](https://bandit.readthedocs.io/en/latest/), [pre-commit](https://pre-commit.com/), [GitHub](https://github.com/), and [VS Code](https://code.visualstudio.com/).
+- **Open Source Tools**: Familiarize yourself with industry-standard tools like [uv](https://docs.astral.sh/uv/), [pytest](https://docs.pytest.org/en/latest/), [pyenv](https://github.com/pyenv/pyenv), [ruff](https://docs.astral.sh/ruff/), [mlflow](https://mlflow.org/), [bandit](https://bandit.readthedocs.io/en/latest/), [pre-commit](https://pre-commit.com/), [GitHub](https://github.com/), and [VS Code](https://code.visualstudio.com/).
 - **Mentoring sessions**: Boost your learning experience with personalized feedback and expert insights from the course authors.
   - Book [a one-on-one mentoring session](https://calendar.app.google/9KfEBkpCHQKwarLF8) to receive tailored guidance and support on the course.
   - Contact the [course creators](mailto:mlops-coding-course@fmind.dev) to request a personalized quote for group and organization training.
@@ -37,7 +38,7 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 To start contributing , you will need to set up your development environment:
 
 1. Clone the repository.
-2. Install dependencies using [Poetry](https://python-poetry.org/):
+2. Install dependencies using [uv](https://docs.astral.sh/uv/):
 
 ```bash
 invoke install
@@ -49,7 +50,7 @@ invoke install
 invoke serve
 ```
 
-You can then access the course at this URL from your computer: http://localhost:8000/mlops-coding-course/
+You can then access the course at this URL from your computer: http://localhost:8000/
 
 ## Contributions
 
