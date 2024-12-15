@@ -13,4 +13,3 @@ Observability in Machine Learning Operations (MLOps) is crucial for gaining insi
 - **[7.4. Costs and KPIs](./4. Costs-KPIs.md)**: Explore techniques for managing costs associated with running AI/ML workloads and for defining and tracking key performance indicators (KPIs) aligned with business goals, using MLflow Tracking for analysis.
 - **[7.5. Explainability](./5. Explainability.md)**: Explore the concept of explainable AI, focusing on techniques like SHAP to understand model predictions and build trust in AI systems.
 - **[7.6. Infrastructure](./6. Infrastructure.md)**: Discover the importance of infrastructure monitoring, learning how to track resource usage and performance metrics to optimize efficiency and costs through MLflow System Metrics.
-```
