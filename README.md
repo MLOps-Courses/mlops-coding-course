@@ -37,19 +37,19 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 To start contributing , you will need to set up your development environment:
 
 1. Clone the repository.
-2. Install dependencies using [Poetry](https://python-poetry.org/):
+2. In the cloned repostory directory, install dependencies using [Poetry](https://python-poetry.org/):
 
 ```bash
 invoke install
 ```
 
-3. Serve the documentation locally to see course material in your browser:
+3. Serve the documentation locally (from that directory) to see course material in your browser:
 
 ```bash
 invoke serve
 ```
 
-You can then access the course at this URL from your computer: http://localhost:8000/mlops-coding-course/
+You can then access the course at this URL from your computer: http://localhost:8000/
 
 ## Contributions
 
