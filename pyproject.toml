@@ -5,22 +5,22 @@
 
 [project]
 name = "mlops-coding-course"
-version = "4.0.0"
-description = "Learn how to create, develop, and maintain an MLOps code base."
+version = "4.1.0"
+description = "Learn how to create, develop, and maintain a state-of-the-art MLOps code base."
 authors = [{ name = "Médéric HURIER", email = "github@fmind.dev" }]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 license = { file = "LICENSE.txt" }
 dependencies = [
     "mkdocs>=1.6.1",
-    "mkdocs-material>=9.5.48",
+    "mkdocs-material>=9.6.7",
 ]
 
 # DEPENDENCIES
 
 [dependency-groups]
 dev = [
-    "invoke>=2.2.0",
+    "rust-just>=1.39.0",
 ]
 
 # TOOLS

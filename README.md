@@ -41,13 +41,13 @@ To start contributing , you will need to set up your development environment:
 2. In the cloned repository directory, install dependencies using [uv](https://docs.astral.sh/uv/):
 
 ```bash
-invoke install
+uv run just install
 ```
 
 3. Serve the documentation locally (from that directory) to see course material in your browser:
 
 ```bash
-invoke serve
+uv run just serve
 ```
 
 You can then access the course at this URL from your computer: http://localhost:8000/
