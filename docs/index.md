@@ -44,6 +44,6 @@ The chapter focuses on sharing and distributing MLOps projects. We explore tools
 
 This chapter dives into the essential aspects of observability in MLOps, equipping you with the knowledge and strategies to gain comprehensive insights into the performance, behavior, and health of your deployed models and infrastructure. You'll learn how to ensure reproducibility, implement monitoring and alerting systems, track data and model lineage, manage costs and KPIs, understand model explainability, and monitor infrastructure performance.
 
-## Let's journey together!
+## Let's journey together
 
 We are excited to have you join us on this journey to mastering MLOps. By the end of this course, you will be well-equipped to manage and execute ML projects with a high degree of professionalism and skill. Let’s get started on transforming your data science capabilities with effective MLOps practices!
