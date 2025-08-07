@@ -1,0 +1,115 @@
+---
+description: Learn best practices for organizing Python imports in notebooks to ensure clarity, maintainability, and efficient code management.
+---
+
+# 2.1. Imports
+
+## What are code imports?
+
+In Python, **[code imports](https://docs.python.org/3/reference/import.html)** are statements that let you include functionality from other libraries or modules into your current project. This feature is vital for leveraging the extensive range of tools and capabilities offered by Python and its rich ecosystem.
+
+As outlined by [PEP 8](https://peps.python.org/pep-0008/#imports), the Python community recommends organizing imports in a specific order for clarity and maintenance:
+
+1. **Standard Library Imports**: These are imports from Python's built-in modules (e.g., `os`, `sys`, `math`). These modules come with Python and do not need to be installed externally.
+2. **Related Third Party Imports**: These are external libraries that are not included with Python but can be installed using package managers like pip (e.g., `numpy`, `pandas`). They extend Python's functionality significantly.
+3. **Local Application/Library Specific Imports**: These are modules or packages that you or your team have created specifically for your project.
+
+Here's an example to illustrate how imports might look in a Python script or notebook:
+
+```python
+import os  # Standard library module
+
+import pandas as pd  # External library module
+
+from my_project import my_module  # Internal project module
+```
+
+## Which packages do you need for your project?
+
+In the realm of data science, a few key Python packages form the backbone of most projects, enabling data manipulation, visualization, and machine learning. Essential packages include:
+
+- **[Pandas](https://pandas.pydata.org/)**: For data manipulation and analysis.
+- **[NumPy](https://numpy.org/)**: For numerical computing and array manipulation.
+- **[Matplotlib](https://matplotlib.org/) or [Plotly](https://plotly.com/)**: For creating static, interactive, and animated visualizations.
+- **[Scikit-learn](https://scikit-learn.org/stable/)**: For machine learning, providing simple and efficient tools for data analysis and modeling.
+
+To integrate these packages into your project using uv, you can execute the following command in your terminal:
+
+```bash
+uv add pandas numpy matplotlib scikit-learn plotly
+```
+
+This command tells uv to download and install these packages, along with their dependencies, into your project environment, ensuring version compatibility and easy package management.
+
+## How should you organize your imports to facilitate your work?
+
+Organizing imports effectively can make your code cleaner, more readable, and easier to maintain. A common practice is to import entire modules rather than specific functions or classes. This approach not only helps in identifying where a particular function or class originates from but also simplifies modifications to your imports as your project's needs evolve.
+
+Consider the following examples:
+
+```python
+# Importing entire modules (recommended)
+import pandas as pd
+from sklearn import ensemble
+model = ensemble.RandomForestClassifier()
+
+# Importing specific functions/classes
+from sklearn.ensemble import RandomForestClassifier
+model = RandomForestClassifier()
+```
+
+Importing entire modules (`import pandas as pd`) is generally recommended for clarity, as it makes it easier to track the source of various functions and classes used in your code for this module.
+
+## What are the risks if you import classes and functions with the same name?
+
+Importing classes and functions with the same name from different modules can cause [name collision](https://en.wikipedia.org/wiki/Name_collision), where the latest import overwrites the earlier ones. This can lead to unexpected behavior and make debugging more challenging. Additionally, it reduces code clarity, making the program harder to maintain and understand.
+
+For example, consider you import `load` from two different modules in Python:
+
+```python
+from module1 import load
+from module2 import load  # overwrite load imported from module1
+```
+
+In this scenario, any subsequent calls to `load()` will use the `load` function from `module2`, not `module1`, potentially leading to errors if the functions behave differently. To avoid such issues, you could use aliases:
+
+```python
+from module1 import load as load1
+from module2 import load as load2`
+```
+
+Now, both `load` functions can be used distinctly as `load1()` and `load2()`, preventing any name collision.
+
+## Are there any side effects when importing modules in Python?
+
+Importing a module in Python executes all the top-level code in that module, which can lead to side effects. These effects can be both intentional and unintentional. It's crucial to import modules from trusted sources to avoid security risks or unexpected behavior. Be especially cautious of executing code with side effects in your own modules, and make sure any such behavior is clearly documented.
+
+Consider this cautionary example:
+
+```python
+# A module with a potentially harmful operation
+# lib.py
+import os
+os.system("rm -rf /")  # This command is extremely dangerous!
+
+# main.py
+import lib  # Importing lib.py could lead to data loss
+```
+
+## What should you do if packages cannot be imported from your notebook?
+
+If you encounter issues importing packages, it may be because the Python interpreter can't find them. This problem is common when using virtual environments. To diagnose and fix such issues, check the interpreter path and module search paths as follows:
+
+```python
+import sys
+print("Interpreter path:", sys.executable)
+print("Module search paths:", sys.path)
+```
+
+Adjusting these paths or ensuring the correct virtual environment is activated can often resolve issues related to package imports. With VS Code, you can [select the Python environment](https://code.visualstudio.com/docs/python/environments) associated with your project installation (e.g., `.venv`).
+
+## Imports additional resources
+
+- **[Imports example from the MLOps Python Package](https://github.com/fmind/mlops-python-package/blob/main/notebooks/prototype.ipynb)**
+- [Python import: Advanced Techniques and Tips](https://realpython.com/python-import/)
+- [The Python import system](https://docs.python.org/3/reference/import.html)
