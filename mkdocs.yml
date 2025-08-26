@@ -46,6 +46,8 @@ extra:
   analytics:
     provider: google
     property: G-MWT9Z8Y8PW
+extra_css:
+  - stylesheets/extra.css
 
 # Extensions
 markdown_extensions:

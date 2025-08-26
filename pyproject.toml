@@ -5,7 +5,7 @@
 
 [project]
 name = "mlops-coding-course"
-version = "4.1.1"
+version = "5.0.0"
 description = "Learn how to create, develop, and maintain a state-of-the-art MLOps code base."
 authors = [{ name = "Médéric HURIER", email = "github@fmind.dev" }]
 readme = "README.md"
