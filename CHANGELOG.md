@@ -2,6 +2,16 @@
 
 All notable changes to this project are documented in this file.
 
+## [7.0.0] - 2026-08-10
+
+### 🚀 Features
+
+- Run the canonical gate and practice the security it teaches (#40)
+
+### 📚 Documentation
+
+- Teach the stack the repositories actually run, and add AGENTS.md (#41)
+
 ## [6.0.0] - 2026-07-07
 
 ### 🚀 Features
