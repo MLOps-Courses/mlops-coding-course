@@ -10,7 +10,8 @@ description = "Learn how to create, develop, and maintain a state-of-the-art MLO
 authors = [{ name = "Médéric HURIER", email = "github@fmind.dev" }]
 readme = "README.md"
 requires-python = ">=3.14"
-license = { file = "LICENSE.txt" }
+license = "CC-BY-4.0"
+license-files = ["LICENSE.txt"]
 keywords = ["mlops", "python", "course", "best-practices", "machine-learning"]
 dependencies = [
   "mkdocs>=1.6.1",
@@ -23,6 +24,14 @@ dependencies = [
 Homepage = "https://mlops-coding-course.fmind.dev/"
 Documentation = "https://mlops-coding-course.fmind.dev/"
 Repository = "https://github.com/MLOps-Courses/mlops-coding-course"
+
+# DEPENDENCIES
+
+[dependency-groups]
+dev = [
+  "pip-audit>=2.10.1",
+  "validate-pyproject>=0.25",
+]
 
 # TOOLS
 

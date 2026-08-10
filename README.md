@@ -28,31 +28,44 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 ## Course Content
 
 1. **Initializing**: Set up your development environment, manage Python versions, and handle external dependencies.
-2. **Prototyping**: Use Jupyter notebooks for ML prototyping, explore dataset manipulation, and perform initial model assessments.
-3. **Productionizing**: Transition from notebooks to clean Python packages, learn about modular coding, and understand different programming paradigms.
-4. **Validating**: Focus on code quality with typing, linting, testing, and debugging to ensure your ML projects are robust and maintainable.
-5. **Refining**: Dive into advanced MLOps techniques including CI/CD workflows, software containers, and model registries to streamline your operations.
-6. **Sharing**: Learn how to effectively organize and document your MLOps projects to ensure they are accessible and collaborative.
-7. **Observability**: Gain comprehensive insights into the behavior and performance of your deployed models and infrastructure.
+1. **Prototyping**: Use Jupyter notebooks for ML prototyping, explore dataset manipulation, and perform initial model assessments.
+1. **Productionizing**: Transition from notebooks to clean Python packages, learn about modular coding, and understand different programming paradigms.
+1. **Validating**: Focus on code quality with typing, linting, testing, and debugging to ensure your ML projects are robust and maintainable.
+1. **Refining**: Dive into advanced MLOps techniques including CI/CD workflows, software containers, and model registries to streamline your operations.
+1. **Sharing**: Learn how to effectively organize and document your MLOps projects to ensure they are accessible and collaborative.
+1. **Observability**: Gain comprehensive insights into the behavior and performance of your deployed models and infrastructure.
 
 ## Installation
 
-To start contributing , you will need to set up your development environment:
+To start contributing, you will need to set up your development environment:
 
 1. Clone the repository.
-2. In the cloned repository directory, install dependencies and git hooks with [mise](https://mise.jdx.dev/) (which drives [uv](https://docs.astral.sh/uv/)):
+1. In the cloned repository directory, install dependencies and git hooks with [mise](https://mise.jdx.dev/) (which drives [uv](https://docs.astral.sh/uv/)):
 
-```bash
-mise run install
-```
+   ```bash
+   mise run install
+   ```
 
 1. Serve the documentation locally (from that directory) to see course material in your browser:
 
-```bash
-mise run serve
-```
+   ```bash
+   mise run serve
+   ```
 
 You can then access the course at this URL from your computer: <http://localhost:8000/>
+
+## Development
+
+Every task goes through [mise](https://mise.jdx.dev/); run `mise tasks` for the full list.
+
+| Command            | Purpose                                                                                                   |
+| ------------------ | --------------------------------------------------------------------------------------------------------- |
+| `mise run install` | Sync Python dependencies (`uv`) and install the git hooks (`lefthook`).                                   |
+| `mise run format`  | Format JSON, Markdown, TOML, and YAML with `dprint`.                                                      |
+| `mise run check`   | Run every static check: workflows, strict site build, formatting, secrets, scanning, and vulnerabilities. |
+| `mise run build`   | Build the static site into `site/`.                                                                       |
+| `mise run serve`   | Serve the documentation locally with live reload.                                                         |
+| `mise run all`     | The canonical gate — format, check, build — exactly what CI runs.                                         |
 
 ## Contributions
 

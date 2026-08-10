@@ -8,10 +8,28 @@ _.source = ".env"
 run_auto_install = false
 
 [tools]
-uv = "latest"
+actionlint = "latest"
 dprint = "latest"
 gitleaks = "latest"
 lefthook = "latest"
+# The course teaches readers to pin Python 3.14; the site that teaches it pins the same
+# interpreter, so `mise-action` in CI provisions it instead of inheriting the runner's.
+python = "3.14"
+trivy = "latest"
+uv = "latest"
+zizmor = "latest"
+
+# ALL
+
+[tasks.all]
+alias = "a"
+description = "Format, check, and build the site (the canonical gate)"
+# No `test` step: this repository is prose, and the only executable assertion it can make is
+# `mkdocs build --strict`, which `check:build` already runs. A `test` alias re-running that
+# same build would report a test suite that does not exist.
+run = ["mise run format", "mise run check", "mise run build"]
+
+# INSTALL
 
 [tasks.install]
 alias = "i"
@@ -27,32 +45,70 @@ description = "Install git hooks (lefthook)"
 depends = ["install:python"]
 run = "lefthook install"
 
+# FORMAT
+
 [tasks.format]
 alias = "f"
-description = "Format config and markup files (dprint)"
+description = "Format all config and markup files"
+depends = ["format:dprint"]
+
+[tasks."format:dprint"]
+description = "Format JSON, Markdown, TOML, YAML (dprint)"
 run = "dprint fmt"
+
+# CHECK
 
 [tasks.check]
 alias = "c"
 description = "Run all checks in parallel"
-depends = ["check:format", "check:build", "check:leaks"]
+depends = [
+  "check:actions",
+  "check:build",
+  "check:format",
+  "check:leaks",
+  "check:scan",
+  "check:vuln",
+]
 
-[tasks."check:format"]
-description = "Check config/markup formatting (dprint)"
-run = "dprint check"
+[tasks."check:actions"]
+description = "Lint and audit GitHub Actions workflows (actionlint + zizmor)"
+run = ["actionlint", "zizmor --offline .github/workflows/"]
 
 [tasks."check:build"]
 description = "Build the site in strict mode to catch broken links and config"
 run = "uv run mkdocs build --strict"
 
+[tasks."check:format"]
+description = "Check formatting and config validity"
+run = [
+  "uv run validate-pyproject pyproject.toml",
+  "dprint check",
+  "uv lock --check",
+]
+
 [tasks."check:leaks"]
 description = "Audit for leaked secrets (gitleaks)"
 run = 'gitleaks git --log-opts="--max-count=100" --verbose'
+
+[tasks."check:scan"]
+description = "Scan the checkout for misconfigurations, secrets, and licenses (trivy)"
+# `--config` is explicit on purpose: without it a `TRIVY_CONFIG` exported in the user's
+# shell silently wins over the policy committed here, and the repository's own rules
+# never run. `fs` (not `config`) is what actually enables every scanner in trivy.yaml.
+run = "trivy --config trivy.yaml fs ."
+
+[tasks."check:vuln"]
+description = "Scan dependencies for vulnerabilities (pip-audit)"
+run = "uv run pip-audit --skip-editable --cache-dir .cache/pip-audit"
+
+# BUILD
 
 [tasks.build]
 alias = "b"
 description = "Build the documentation site"
 run = "uv run mkdocs build"
+
+# UTILITIES
 
 [tasks.serve]
 alias = "s"
@@ -64,7 +120,12 @@ alias = "w"
 description = "Serve the documentation with live reload"
 depends = ["serve"]
 
+[tasks.upgrade]
+alias = "u"
+description = "Upgrade dependencies to the latest compatible versions"
+run = "uv sync --upgrade"
+
 [tasks.clean]
 alias = "n"
-description = "Remove the built site"
-run = "rm -rf site"
+description = "Remove caches and the built site"
+run = "rm -rf .cache site"

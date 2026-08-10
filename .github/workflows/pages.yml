@@ -10,18 +10,26 @@ concurrency:
   cancel-in-progress: false
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    # A job-level block replaces the workflow-level one rather than adding to it, so
+    # `contents: read` must be repeated here or the checkout would run with no read scope.
     permissions:
-      pages: write
-      id-token: write
+      contents: read # checkout reads the repository
+      pages: write # upload and deploy the site artifact
+      id-token: write # OIDC token the Pages deployment is verified with
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
+        with:
+          persist-credentials: false # the deploy uses the OIDC token, not the git credential
       - name: Install mise toolchain
         uses: jdx/mise-action@v4
+        with:
+          cache: true
       - name: Build site
         run: mise run build
       - name: Configure Pages
