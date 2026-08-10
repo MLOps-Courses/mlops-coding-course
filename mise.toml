@@ -54,7 +54,10 @@ depends = ["format:dprint"]
 
 [tasks."format:dprint"]
 description = "Format JSON, Markdown, TOML, YAML (dprint)"
-run = "dprint fmt"
+# `--allow-no-files` because the pre-commit hook passes staged paths and dprint.jsonc
+# excludes `docs/**`: without it, dprint exits 14 on a commit that touches only chapter
+# files, which is every content contribution this repository asks for.
+run = "dprint fmt --allow-no-files"
 
 # CHECK
 
