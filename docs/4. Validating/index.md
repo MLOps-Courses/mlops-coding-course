@@ -2,9 +2,16 @@
 description: This chapter emphasizes the importance of code validation for creating robust MLOps pipelines. Learn how to implement typing, linting, and testing to ensure the quality and reliability of your code.
 ---
 
-# 4.0 Validating
+# 4. Validating
 
 Code validation is the bedrock of robust MLOps. In this chapter, you'll master the essential techniques to ensure your ML pipelines are scalable, efficient, and reliable. From static analysis to dynamic debugging, these practices are critical for elevating code quality and operational excellence.
+
+Every check in this chapter is exposed as a `mise run check:*` subtask, so the same command runs in your terminal, in your git hooks, and in continuous integration. The canonical gate that ties them together is a single task:
+
+```bash
+# Format, check, test, and build the project
+mise run all
+```
 
 - **[4.0. Typing](./4.0. Typing.md):** Implement static type checking to catch errors early and enhance code clarity.
 - **[4.1. Linting](./4.1. Linting.md):** Use linting to enforce coding standards, eliminate errors, and improve code maintainability.
