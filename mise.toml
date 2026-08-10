@@ -12,6 +12,7 @@ actionlint = "latest"
 dprint = "latest"
 gitleaks = "latest"
 lefthook = "latest"
+lychee = "latest"
 # The course teaches readers to pin Python 3.14; the site that teaches it pins the same
 # interpreter, so `mise-action` in CI provisions it instead of inheriting the runner's.
 python = "3.14"
@@ -80,6 +81,17 @@ run = ["actionlint", "zizmor --offline .github/workflows/"]
 [tasks."check:build"]
 description = "Build the site in strict mode to catch broken links and config"
 run = "uv run mkdocs build --strict"
+
+[tasks."check:links"]
+description = "Check external links in the README and every chapter (lychee)"
+# Deliberately NOT in `check`. It takes minutes, hits ~700 external URLs, and most of
+# what it reports is other people's rate limiting: a full run found 63 failures, of which
+# 37 were HTTP 429 and 14 were bot-blocking 403s against only 9 genuinely dead links.
+# Wiring that into the commit gate would train everyone to ignore a red check. It runs
+# monthly and on demand from `.github/workflows/links.yml` instead, where a human reads it.
+# 429 is accepted on purpose: a host that rate-limits a scanner is a host that is up, so
+# treating it as a failure would report the opposite of what the check exists to find.
+run = "lychee --no-progress --max-concurrency 8 --timeout 20 --accept 200..=299,429 README.md AGENTS.md 'docs/**/*.md'"
 
 [tasks."check:format"]
 description = "Check formatting and config validity"

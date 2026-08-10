@@ -1,0 +1,30 @@
+name: Links
+# The course is mostly links to other people's work, and those rot silently: nothing in
+# push CI notices when a referenced article disappears. This is the counterpart — slow,
+# network-bound, and scheduled, so a dead link is found by a job nobody is waiting on
+# rather than by a reader.
+on:
+  schedule:
+    - cron: "23 4 1 * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: links
+  cancel-in-progress: true
+jobs:
+  check:
+    name: External link check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false # the checker only reads the checkout
+      - name: Install mise toolchain
+        uses: jdx/mise-action@v4
+        with:
+          cache: true
+      - name: Check external links
+        run: mise run check:links
