@@ -1,9 +1,10 @@
 # https://git-scm.com/docs/gitignore
 
 # Caches
-.mypy_cache/
+.cache/
 
 # Environs
+.env
 /.venv/
 
 # Websites

@@ -1,18 +1,25 @@
 name: Auto Assign
+# Issues only, deliberately. A `pull_request: [opened]` trigger runs with a read-only
+# GITHUB_TOKEN when the pull request comes from a fork, so `issues: write` is never
+# granted and the assignment fails — a red check on every pull request from exactly the
+# external contributors the README invites. Removing the trigger fixes that at the root
+# instead of hiding a guaranteed failure behind `continue-on-error`.
 on:
   issues:
     types: [opened]
-  pull_request:
-    types: [opened]
+permissions:
+  contents: read
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
     permissions:
-      issues: write
-      pull-requests: write
+      issues: write # the only write this workflow needs: assign the new issue
     steps:
-      - name: "Auto-assign issue"
-        uses: pozil/auto-assign-issue@v2
+      - name: Auto-assign issue
+        # v3 moved the action to ES modules and v4 to the Node 24 runtime; neither renamed
+        # an input, so `repo-token` / `assignees` / `numOfAssignee` carry over unchanged.
+        uses: pozil/auto-assign-issue@v4
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: fmind

@@ -1,22 +1,24 @@
 # https://lefthook.dev
 # Thin hooks: every command delegates to a `mise run` task so hooks and CI stay identical.
+# Lefthook orders commands alphabetically, so priorities are explicit: formatters (10)
+# restage before the staged secret scan (20) and the whole-tree checks (30) read from disk.
 
 pre-commit:
   parallel: false
   commands:
     format:dprint:
-      priority: 1
+      priority: 10
       glob: "*.{json,md,toml,yaml,yml}"
-      run: mise run format {staged_files}
+      run: mise run format:dprint {staged_files}
       stage_fixed: true
     check:leaks:
-      priority: 2
+      priority: 20
       run: mise run check:leaks --staged
     check:
-      priority: 3
+      priority: 30
       run: mise run check
 
-pre-push:
-  commands:
-    build:
-      run: mise run check:build
+# No pre-push hook. The canonical one runs the test suite, and this repository has none:
+# its only executable assertion is `mkdocs build --strict`, which pre-commit's `check`
+# already runs on the whole tree. A pre-push stage would re-run it against an unchanged
+# tree and buy nothing but latency; CI (`mise run all`) is the gate that follows a push.
