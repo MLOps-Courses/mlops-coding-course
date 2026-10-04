@@ -91,7 +91,9 @@ description = "Check external links in the README and every chapter (lychee)"
 # monthly and on demand from `.github/workflows/links.yml` instead, where a human reads it.
 # 429 is accepted on purpose: a host that rate-limits a scanner is a host that is up, so
 # treating it as a failure would report the opposite of what the check exists to find.
-run = "lychee --no-progress --max-concurrency 8 --timeout 20 --accept 200..=299,429 README.md AGENTS.md 'docs/**/*.md'"
+# Per-host pacing and slower retries keep bursts off hosts such as docs.python.org, which
+# answered the 2026-10-01 CI run with 16 transient 503s while every link passed locally.
+run = "lychee --no-progress --max-concurrency 8 --host-concurrency 2 --host-request-interval 250ms --max-retries 3 --retry-wait-time 5 --timeout 20 --accept 200..=299,429 README.md AGENTS.md 'docs/**/*.md'"
 
 [tasks."check:format"]
 description = "Check formatting and config validity"
