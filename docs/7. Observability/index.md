@@ -13,3 +13,6 @@ In Machine Learning Operations (MLOps), observability is the key to understandin
 - **[7.4. Costs and KPIs](./7.4. Costs-KPIs.md)**: Learn to manage the costs of AI/ML workloads and align your projects with business objectives by defining and tracking Key Performance Indicators (KPIs) with MLflow Tracking.
 - **[7.5. Explainability](./7.5. Explainability.md)**: Dive into Explainable AI (XAI) and use techniques like SHAP to interpret model predictions, build stakeholder trust, and ensure transparency.
 - **[7.6. Infrastructure](./7.6. Infrastructure.md)**: Monitor your system's health by tracking resource usage and performance metrics with MLflow System Metrics to optimize both efficiency and cost.
+
+## Checkpoint: explain a run from its evidence
+Choose a chapter 5 training run and its corresponding model-version evaluation run. Find its input dataset source and digest, code version, model signature, heldout metrics, and system measurements. Write a short model card describing the intended use, known input constraints, test period, and one failure condition worth alerting on. You are ready when each claim points to a stored measurement or a clearly stated assumption. If the dataset path now contains different bytes, which evidence helps identify the run and which extra retention mechanism would let you reconstruct it?

@@ -5,7 +5,7 @@
 
 [project]
 name = "mlops-coding-course"
-version = "7.0.0"
+version = "7.1.0"
 description = "Learn how to create, develop, and maintain a state-of-the-art MLOps code base."
 authors = [{ name = "Médéric HURIER", email = "github@fmind.dev" }]
 readme = "README.md"
@@ -13,10 +13,7 @@ requires-python = ">=3.14"
 license = "CC-BY-4.0"
 license-files = ["LICENSE.txt"]
 keywords = ["mlops", "python", "course", "best-practices", "machine-learning"]
-dependencies = [
-  "mkdocs>=1.6.1",
-  "mkdocs-material>=9.7.6",
-]
+dependencies = []
 
 # LINKS
 
@@ -31,6 +28,7 @@ Repository = "https://github.com/MLOps-Courses/mlops-coding-course"
 dev = [
   "pip-audit>=2.10.1",
   "validate-pyproject>=0.25",
+  "zensical==0.0.69",
 ]
 
 # TOOLS

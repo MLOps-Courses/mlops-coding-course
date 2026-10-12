@@ -8,27 +8,30 @@ _.source = ".env"
 run_auto_install = false
 
 [tools]
-actionlint = "latest"
-dprint = "latest"
-gitleaks = "latest"
-lefthook = "latest"
-lychee = "latest"
-# The course teaches readers to pin Python 3.14; the site that teaches it pins the same
-# interpreter, so `mise-action` in CI provisions it instead of inheriting the runner's.
-python = "3.14"
-trivy = "latest"
-uv = "latest"
-zizmor = "latest"
+"aqua:rhysd/actionlint" = "1.7.12"
+"aqua:dprint/dprint" = "0.63.0"
+"aqua:gitleaks/gitleaks" = "8.30.1"
+"aqua:evilmartians/lefthook" = "2.2.1"
+"aqua:lycheeverse/lychee" = "0.24.2"
+# Python 3.14 is the tested ML stack; qualify NumPy/Numba/SHAP on 3.15 before changing the course runtime.
+"python" = "3.14.8"
+"aqua:aquasecurity/trivy" = "0.75.0"
+"aqua:astral-sh/uv" = "0.13.0"
+"aqua:zizmorcore/zizmor" = "1.30.1"
 
 # ALL
 
 [tasks.all]
 alias = "a"
-description = "Format, check, and build the site (the canonical gate)"
-# No `test` step: this repository is prose, and the only executable assertion it can make is
-# `mkdocs build --strict`, which `check:build` already runs. A `test` alias re-running that
-# same build would report a test suite that does not exist.
-run = ["mise run format", "mise run check", "mise run build"]
+description = "Format, check, execute examples, and build the site (the canonical gate)"
+run = ["mise run format", "mise run check", "mise run test", "mise run build"]
+
+[tasks.test]
+description = "Execute the maintained configuration and temporal evaluation labs"
+run = [
+  "uv run --locked examples/configuration.py",
+  "uv run --locked examples/temporal_evaluation.py",
+]
 
 # INSTALL
 
@@ -80,7 +83,7 @@ run = ["actionlint", "zizmor --offline .github/workflows/"]
 
 [tasks."check:build"]
 description = "Build the site in strict mode to catch broken links and config"
-run = "uv run mkdocs build --strict"
+run = "uv run --locked zensical build --clean --strict"
 
 [tasks."check:links"]
 description = "Check external links in the README and every chapter (lychee)"
@@ -105,7 +108,7 @@ run = [
 
 [tasks."check:leaks"]
 description = "Audit for leaked secrets (gitleaks)"
-run = 'gitleaks git --log-opts="--max-count=100" --verbose'
+run = 'gitleaks git --log-opts="--max-count=100" --redact=100 --verbose'
 
 [tasks."check:scan"]
 description = "Scan the checkout for misconfigurations, secrets, and licenses (trivy)"
@@ -123,14 +126,14 @@ run = "uv run pip-audit --skip-editable --cache-dir .cache/pip-audit"
 [tasks.build]
 alias = "b"
 description = "Build the documentation site"
-run = "uv run mkdocs build"
+run = "uv run --locked zensical build --clean --strict"
 
 # UTILITIES
 
 [tasks.serve]
 alias = "s"
 description = "Serve the documentation with live reload"
-run = "uv run mkdocs serve"
+run = "uv run --locked zensical serve -a 127.0.0.1:8000"
 
 [tasks.watch]
 alias = "w"

@@ -1,3 +1,5 @@
+# https://trivy.dev/docs/latest/references/configuration/config-file/
+exit-code: 1
 severity:
   - HIGH
   - CRITICAL

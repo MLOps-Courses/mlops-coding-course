@@ -1,4 +1,4 @@
-# https://www.mkdocs.org/user-guide/configuration/#configuration
+# https://zensical.org/docs/compatibility/mkdocs/migration/
 
 # Project information
 site_author: MLOps Courses
@@ -15,11 +15,16 @@ copyright: Copyright &copy; MLOps Courses
 
 # Configs
 strict: true
+validation:
+  links:
+    not_found: warn
+    unrecognized_links: warn
 use_directory_urls: false
 
 # Theme
 theme:
   name: material
+  variant: classic
   logo: assets/logo.png
   favicon: assets/favicon.ico
   palette:
@@ -58,3 +63,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true

@@ -21,3 +21,6 @@ By standardizing your setup from day one, you establish best practices that ensu
 - **[1.5. GitHub](./1.5. GitHub.md)**: How do you use GitHub for collaborative MLOps projects?** Learn to leverage GitHub for hosting repositories, managing collaborative workflows, and integrating with CI/CD pipelines. GitHub is the central hub for modern software and MLOps development.
 
 - **[1.6. VS Code](./1.6. VS Code.md)**: How can you optimize VS Code for MLOps?** Transform VS Code from a simple text editor into a powerful Integrated Development Environment (IDE) tailored for Python and MLOps, complete with debugging, linting, and extension recommendations.
+
+## Checkpoint: identify your environment
+From the reference project, run `mise run install:python`, then `uv run python -c "import sys; print(sys.version); print(sys.executable)"`. Confirm that the interpreter belongs to the project's `.venv` and satisfies `requires-python` in `pyproject.toml`. Open the same interpreter as your notebook kernel. You are ready for the next chapter when the terminal and notebook report the same interpreter. Why can a successful system `python` import still fail in a notebook?

@@ -13,3 +13,6 @@ Effective project sharing is a hallmark of mature MLOps practices. It accelerate
 - **[6.4. Templates](./6.4. Templates.md)**: Standardize project components with templates to boost consistency and efficiency.
 - **[6.5. Workstations](./6.5. Workstations.md)**: Configure cloud-based workstations to provide a consistent development environment for contributors.
 - **[6.6. Contributions](./6.6. Contributions.md)**: Establish clear guidelines for issues and pull requests to foster effective community contributions.
+
+## Checkpoint: review a generated project
+Generate a project from the MLOps template into a new local directory. Inspect its README, package name, entrypoint, and workflow files, then run its documented installation and checks. If you want future template updates, generate it with Cruft and inspect `.cruft.json`. You are ready when the generated project's instructions work without relying on files from the template checkout. Which choices should another contributor be able to change without editing source code?

@@ -20,3 +20,6 @@ mise run all
 - **[4.4. Security](./4.4. Security.md):** Learn to identify and mitigate security vulnerabilities to protect your ML applications and data.
 - **[4.5. Formatting](./4.5. Formatting.md):** Adopt automated code formatting to ensure consistency, improve readability, and streamline team collaboration.
 - **[4.6. Debugging](./4.6. Debugging.md):** Develop effective debugging strategies to rapidly diagnose and resolve issues in your ML code.
+
+## Checkpoint: watch a useful test fail
+Run `uv run pytest tests/core/test_metrics.py --no-cov`. In a disposable copy of one test, change a meaningful expected score or threshold so it fails, then restore your change and rerun it. Read the failure message and locate the tested behavior in `src/bikes/core/metrics.py`. You are ready when the original test passes and you can explain exactly which regression your failing experiment detected. Would a test that only checks its input types have caught that regression?

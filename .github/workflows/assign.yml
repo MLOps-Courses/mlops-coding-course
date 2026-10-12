@@ -1,3 +1,4 @@
+# https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
 name: Auto Assign
 # Issues only, deliberately. A `pull_request: [opened]` trigger runs with a read-only
 # GITHUB_TOKEN when the pull request comes from a fork, so `issues: write` is never
@@ -19,7 +20,7 @@ jobs:
       - name: Auto-assign issue
         # v3 moved the action to ES modules and v4 to the Node 24 runtime; neither renamed
         # an input, so `repo-token` / `assignees` / `numOfAssignee` carry over unchanged.
-        uses: pozil/auto-assign-issue@v4
+        uses: pozil/auto-assign-issue@af6beea6bdf1e8eb373f061c5bc168681fc6d011 # v4.0.1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           assignees: fmind

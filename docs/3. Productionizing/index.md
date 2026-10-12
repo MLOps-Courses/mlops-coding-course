@@ -13,3 +13,6 @@ Transitioning a machine learning model from a Jupyter Notebook to a production-r
 - **[3.4. Configurations](./3.4. Configurations.md)**: Externalize configurations to manage model parameters, data paths, and environment settings without altering your core codebase.
 - **[3.5. Documentations](./3.5. Documentations.md)**: Learn to write comprehensive documentation, making your code accessible, understandable, and easier for others to maintain.
 - **[3.6. VS Code Workspace](./3.6. VS Code Workspace.md)**: Optimize your VS Code setup with a multi-root workspace to streamline development across different parts of your project.
+
+## Checkpoint: run the installed package
+In the reference project, run `mise run build:python`, inspect the files under `dist/`, and run `uv run bikes --help`. Identify the console entrypoint and the configuration used by `confs/training.yaml`, then find the corresponding job implementation. You are ready when you can trace one command from its CLI arguments through validated configuration to its job. Which notebook assumptions became explicit configuration or validation rules?

@@ -1,3 +1,4 @@
+# https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
 name: Security
 # Push CI scans only the latest commits, so a secret committed earlier and later
 # removed would never be seen again. This is the full-history counterpart: same
@@ -18,13 +19,13 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Checkout complete history
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           persist-credentials: false # scanners only read the checkout
       - name: Install mise system
-        uses: jdx/mise-action@v4
+        uses: jdx/mise-action@08ae2a091c038e1e05ec6f5115dc5c69d5a2a6b8 # v5.1.2
       - name: Scan complete Git history
         run: gitleaks git --redact=100 --verbose
       - name: Scan full checkout
-        run: trivy fs .
+        run: mise run check:scan

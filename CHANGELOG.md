@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented in this file.
 
+## [7.1.0] - 2026-10-12
+
+- Migrate the site to Zensical while preserving published routes, heading anchors and course branding.
+- Add locked executable labs for strict configuration and chronological model evaluation, displayed directly from tested source.
+- Update the course for the current Python/MLflow stack and add reader checkpoints and exercises.
+- Run labs, security and documentation checks before deploying the site.
+
 ## [7.0.0] - 2026-08-10
 
 ### 🚀 Features

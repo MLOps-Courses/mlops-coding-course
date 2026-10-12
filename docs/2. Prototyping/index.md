@@ -13,3 +13,6 @@ In this chapter, we'll explore the cornerstone of any machine learning (ML) proj
 - **[2.4. Analysis](./2.4. Analysis.md)**: Explores techniques for conducting thorough data analysis in notebooks, including visualizations, statistical tests, and exploratory data analysis (EDA) practices.
 - **[2.5. Modeling](./2.5. Modeling.md)**: Details strategies for building, refining, and comparing machine learning models directly within notebooks, covering everything from initial prototypes to model selection.
 - **[2.6. Evaluations](./2.6. Evaluations.md)**: Provides insights on effectively evaluating model performance using various metrics and visualizations, underscoring the role of evaluation in the iterative model development process.
+
+## Checkpoint: earn a trustworthy score
+Use `data/hour.csv` in `notebooks/prototype.ipynb`. Keep the newest rows as the test set and exclude `casual` and `registered` from model inputs, since they sum to `cnt`. Compare your fitted pipeline with a `DummyRegressor` on that same untouched test set and record mean squared error for both. You are ready when you can explain the split, show the two scores, and name one feature that would be unavailable at prediction time. Does the model still improve on the baseline after removing leaked information?

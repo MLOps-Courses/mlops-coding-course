@@ -16,7 +16,7 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 ## Key Features
 
 - **Hands-on Python Coding**: Learn to code with Python in a way that's directly applicable to real-world AI projects.
-- **Project-Driven Learning**: Each chapter includes practical project instructions to help you apply what you've learned.
+- **Project-Driven Learning**: Each chapter ends with an observable checkpoint and an interpretation question to help you apply what you've learned.
 - **MLOps Techniques**: Gain insights into effective MLOps coding strategies that streamline the development and deployment of AI/ML models.
 - **Open Source Tools**: Familiarize yourself with industry-standard tools like [uv](https://docs.astral.sh/uv/), [Ruff](https://docs.astral.sh/ruff/), [ty](https://github.com/astral-sh/ty), [pytest](https://docs.pytest.org/en/latest/), [MLflow](https://mlflow.org/), [mise](https://mise.jdx.dev/), [lefthook](https://lefthook.dev/), [GitHub](https://github.com/), and [VS Code](https://code.visualstudio.com/).
 - **Mentoring sessions**: Boost your learning experience with personalized feedback and expert insights from the course authors.
@@ -43,6 +43,8 @@ To start contributing, you will need to set up your development environment:
 1. In the cloned repository directory, install dependencies and git hooks with [mise](https://mise.jdx.dev/) (which drives [uv](https://docs.astral.sh/uv/)):
 
    ```bash
+   mise trust
+   mise install
    mise run install
    ```
 
@@ -52,7 +54,7 @@ To start contributing, you will need to set up your development environment:
    mise run serve
    ```
 
-You can then access the course at this URL from your computer: <http://localhost:8000/>
+The site uses Zensical with its classic theme, retaining the course branding and published `.html` URLs. You can then access the course at this URL from your computer: <http://localhost:8000/>
 
 ## Development
 
@@ -63,9 +65,14 @@ Every task goes through [mise](https://mise.jdx.dev/); run `mise tasks` for the 
 | `mise run install` | Sync Python dependencies (`uv`) and install the git hooks (`lefthook`).                                   |
 | `mise run format`  | Format JSON, Markdown, TOML, and YAML with `dprint`.                                                      |
 | `mise run check`   | Run every static check: workflows, strict site build, formatting, secrets, scanning, and vulnerabilities. |
+| `mise run test`    | Execute the two maintained local labs with locked dependencies.                                           |
 | `mise run build`   | Build the static site into `site/`.                                                                       |
 | `mise run serve`   | Serve the documentation locally with live reload.                                                         |
-| `mise run all`     | The canonical gate — format, check, build — exactly what CI runs.                                         |
+| `mise run all`     | The canonical gate — format, check, test, build — exactly what CI runs.                                   |
+
+## Runnable labs
+
+From this repository, run `mise run test` to check strict configuration validation and chronological model selection on small synthetic data. The lessons include the same executable source under `examples/`; first-time runs install their locked dependencies. No dataset download or cloud account is needed.
 
 ## Contributions
 
