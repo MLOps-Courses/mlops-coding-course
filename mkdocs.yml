@@ -11,7 +11,7 @@ repo_name: MLOps-Courses/mlops-coding-course
 repo_url: https://github.com/MLOps-Courses/mlops-coding-course
 
 # Copyright
-copyright: Copyright &copy; MLOps Courses
+copyright: Copyright &copy; MLOps Courses &ndash; <a href="#__consent">Change cookie settings</a>
 
 # Configs
 strict: true
@@ -51,6 +51,17 @@ extra:
   analytics:
     provider: google
     property: G-MWT9Z8Y8PW
+  # EU consent: Google Analytics loads only after a visitor accepts; rejecting is one click, like accepting.
+  consent:
+    title: Cookie consent
+    description: >-
+      With your consent, Google Analytics measures which lessons help learners so the course can improve. Nothing
+      loads before you accept, and you can change your choice from the footer at any time. See the
+      <a href="https://www.fmind.dev/privacy">privacy notice</a>.
+    actions:
+      - accept
+      - reject
+      - manage
 extra_css:
   - stylesheets/extra.css
 
