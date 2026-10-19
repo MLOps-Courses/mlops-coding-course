@@ -42,7 +42,7 @@ GitHub configuration files and their roles:
 - `workflows/pages.yml` — runs the complete gate, then deploys the site to GitHub Pages on pushes to `main`.
 - `workflows/security.yml` — weekly (and manual) full-history `gitleaks` and full-checkout `trivy` scan; the push-triggered checks only see recent commits.
 - `workflows/assign.yml` — assigns newly opened issues to `fmind`. Issues only: a fork pull request gets a read-only token, so a `pull_request` trigger would fail on every external contribution.
-- `dependabot.yml` — weekly grouped minor/patch updates for the `uv` and `github-actions` ecosystems, prefixed `chore(deps)`.
+- `dependabot.yml` — security updates only (version updates off), one grouped pull request per ecosystem for `uv` and `github-actions`, prefixed `fix(deps)`.
 - `FUNDING.yml` — GitHub Sponsors link.
 
 ## Definition of done
