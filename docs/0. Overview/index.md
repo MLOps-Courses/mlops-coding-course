@@ -15,5 +15,5 @@ This chapter outlines the core components of your learning journey:
 - **[0.2. Datasets](./0.2. Datasets.md)**: Understand the role of datasets in the AI/ML lifecycle and learn how to select and manage them effectively.
 - **[0.3. Platforms](./0.3. Platforms.md)**: Explore the MLOps platform landscape and learn how to select the right tools, in line with our platform-agnostic philosophy.
 - **[0.4. Mentoring](./0.4. Mentoring.md)**: Find out how to accelerate your learning with personalized mentoring and expert support from our course creators.
-- **[0.5. Assistants](./0.5. Assistants.md)**: Meet your AI-powered course assistant and learn how to use it to get instant help and guidance.
+- **[0.5. Assistants](./0.5. Assistants.md)**: Learn how to guide your own AI coding agent with `AGENTS.md` and the MLOps Coding Skills.
 - **[0.6. Resources](./0.6. Resources.md)**: Access additional materials to deepen your knowledge and learn how you can contribute to our open-source curriculum.

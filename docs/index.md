@@ -10,7 +10,6 @@ Welcome to the MLOps Coding Course, where we bridge the gap between robust softw
 
 - **Donation Link**: [https://donate.stripe.com/4gw8xT9oVbCc98s7ss](https://donate.stripe.com/4gw8xT9oVbCc98s7ss)
 - **GitHub Repository**: [https://github.com/MLOps-Courses/mlops-coding-course](https://github.com/MLOps-Courses/mlops-coding-course)
-- **MLOps Coding Assistant**: [https://mlops-coding-assistant.fmind.dev/](https://mlops-coding-assistant.fmind.dev/)
 - **[Agent Skills](https://agentskills.io/home)**: Enhance your learning with the [MLOps Coding Skills](https://github.com/MLOps-Courses/mlops-coding-skills) repository. These "skills" are specialized instruction sets that you can add to your AI coding assistant (like the one you are using now) to help it understand and execute the MLOps tasks in this course more effectively.
 
 <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/M0icwL3gjL8?si=TzN9Pt3hNgUP0KH5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

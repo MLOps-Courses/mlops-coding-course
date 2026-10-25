@@ -22,8 +22,6 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 - **Mentoring sessions**: Boost your learning experience with personalized feedback and expert insights from the course authors.
   - Book [a one-on-one mentoring session](https://calendar.app.google/9KfEBkpCHQKwarLF8) to receive tailored guidance and support on the course.
   - Contact the [course creators](mailto:mlops-coding-course@fmind.dev) to request a personalized quote for group and organization training.
-- **MLOps Coding Assistant**: Get help from the [MLOps Coding Assistant](https://mlops-coding-assistant.fmind.dev/), a premium tool that provides code snippets, explanations, and examples to help you learn and apply MLOps techniques.
-  - Contact the [course creators](mailto:mlops-coding-course@fmind.dev) to access the assistant for $10 per month.
 
 ## Course Content
 
