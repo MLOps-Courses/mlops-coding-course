@@ -1,17 +1,17 @@
 # https://zensical.org/docs/compatibility/mkdocs/migration/
 
 # Project information
-site_author: MLOps Courses
+site_author: Médéric Hurier (Fmind)
 site_name: MLOps Coding Course
 site_url: https://mlops-coding-course.fmind.dev/
 site_description: Learn how to create, develop, and maintain a state-of-the-art MLOps code base.
 
 # Repository
-repo_name: MLOps-Courses/mlops-coding-course
-repo_url: https://github.com/MLOps-Courses/mlops-coding-course
+repo_name: fmind/mlops-coding-course
+repo_url: https://github.com/fmind/mlops-coding-course
 
 # Copyright
-copyright: Copyright &copy; MLOps Courses &ndash; <a href="#__consent">Change cookie settings</a>
+copyright: Copyright &copy; Médéric Hurier (Fmind) &ndash; <a href="#__consent">Change cookie settings</a>
 
 # Configs
 strict: true
@@ -43,7 +43,7 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:mlops-coding-course@fmind.dev
     - icon: fontawesome/brands/github
-      link: https://github.com/MLOps-Courses/mlops-coding-course
+      link: https://github.com/fmind/mlops-coding-course
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/fmind_dev
     - icon: fontawesome/brands/linkedin

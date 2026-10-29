@@ -20,7 +20,7 @@ dependencies = []
 [project.urls]
 Homepage = "https://mlops-coding-course.fmind.dev/"
 Documentation = "https://mlops-coding-course.fmind.dev/"
-Repository = "https://github.com/MLOps-Courses/mlops-coding-course"
+Repository = "https://github.com/fmind/mlops-coding-course"
 
 # DEPENDENCIES
 

@@ -11,7 +11,7 @@ Whether you are a beginner eager to explore or an experienced professional seeki
 - **[MLOps Python Package (Example)](https://github.com/fmind/mlops-python-package)**: Kickstart your MLOps initiative with a flexible, robust, and productive Python package.
 - **[LLMOps Coding Package (Example)](https://github.com/callmesora/llmops-python-package/)**: Example with best practices and tools to support your LLMOps projects.
 - **[Cookiecutter MLOps Package (Template)](https://github.com/fmind/cookiecutter-mlops-package)**: Start building and deploying Python packages and Docker images for MLOps tasks.
-- **NEW: [Agent Skills](https://agentskills.io/home)**: Enhance your learning with the [MLOps Coding Skills](https://github.com/MLOps-Courses/mlops-coding-skills) repository. These "skills" are specialized instruction sets that you can add to your AI coding assistant to help it understand and execute the MLOps tasks in this course more effectively.
+- **NEW: [Agent Skills](https://agentskills.io/home)**: Enhance your learning with the [MLOps Coding Skills](https://github.com/fmind/mlops-coding-skills) repository. These "skills" are specialized instruction sets that you can add to your AI coding assistant to help it understand and execute the MLOps tasks in this course more effectively.
 
 ## Key Features
 
@@ -74,9 +74,9 @@ From this repository, run `mise run test` to check strict configuration validati
 
 ## Contributions
 
-This course is [open source under the CC-BY 4.0 license](https://github.com/MLOps-Courses/mlops-coding-course/blob/main/LICENSE.txt), and we welcome contributions! Whether it's improving the documentation, adding new examples, or fixing bugs, your input is valuable. Check out the `docs` among other project files to see where you can contribute.
+This course is [open source under the CC-BY 4.0 license](https://github.com/fmind/mlops-coding-course/blob/main/LICENSE.txt), and we welcome contributions! Whether it's improving the documentation, adding new examples, or fixing bugs, your input is valuable. Check out the `docs` among other project files to see where you can contribute.
 
-Feel free to [submit pull requests](https://github.com/MLOps-Courses/mlops-coding-course/pulls) or [open issues](https://github.com/MLOps-Courses/mlops-coding-course/issues) to discuss potential changes or additions to the course content.
+Feel free to [submit pull requests](https://github.com/fmind/mlops-coding-course/pulls) or [open issues](https://github.com/fmind/mlops-coding-course/issues) to discuss potential changes or additions to the course content.
 
 **Join us in advancing the field of MLOps by sharing your expertise and learning from others!**
 
